@@ -19,7 +19,7 @@ public class ChatController {
         final String get=idChat+"&text="+text.replace("_","%20");
         try {
 
-            getResult = Request.Get("https://api.telegram.org/bot1771180306:AAGZoZDoA5LvzsLcuAPzAI5aWT7VchiTcj4/sendMessage?chat_id="+get)
+            getResult = Request.Get("https://api.telegram.org/bot***/sendMessage?chat_id="+get)
                     .execute().returnContent();
            return getResult.asString();
 
